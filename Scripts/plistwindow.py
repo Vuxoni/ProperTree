@@ -482,6 +482,8 @@ class PlistWindow(tk.Toplevel):
             file_menu.add_separator()
             file_menu.add_command(label="OC Snapshot", command=self.oc_snapshot, accelerator="Ctrl+R")
             file_menu.add_command(label="OC Clean Snapshot", command=self.oc_clean_snapshot, accelerator="Ctrl+Shift+R")
+        # New function
+            file_menu.add_command(label="Generate PlatformInfo", command=self.oc_snapshot, accelerator="Ctrl+G")
             file_menu.add_separator()
             file_menu.add_command(label="Convert Window", command=lambda:self.controller.show_window(self.controller.tk), accelerator="Ctrl+T")
             file_menu.add_command(label="Strip Comments", command=self.strip_comments, accelerator="Ctrl+M")
